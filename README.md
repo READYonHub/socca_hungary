@@ -1,1 +1,0 @@
-# socca_hungary
