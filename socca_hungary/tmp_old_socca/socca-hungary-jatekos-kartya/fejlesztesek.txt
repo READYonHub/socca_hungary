@@ -1,0 +1,11 @@
+KÉSZ    -   qr code sajat beepitese
+KÉSZ    -   qr code link problema megoldasa, hogyan generaljan ki mi alapjan a qr kodot?
+
+foto mindenkihez, hogyan es honnan?
+kulon oldalon Vércsoport, allergia, gyógyszerérzékenység (pdf letoltheto formaban)
+
+
+
+### KÉSZ
+* qr code generator
+* qr code kodolo es dekolo (buta)
