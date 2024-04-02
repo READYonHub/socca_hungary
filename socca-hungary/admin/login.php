@@ -45,8 +45,12 @@ if (isset($_POST['login'])) {
 
         if (mysqli_num_rows($result) == 1) {
             $_SESSION['login']  =   true;
+            $log    =   date(" Y-m-d H:i:s ") . " SIKERES BEjelentkezés a(z) {$email} címről ({$_SERVER['REMOTE_ADDR']}) \n";
+            file_put_contents("log.txt", $log, FILE_APPEND);
             header("Location: admin_panel.php ");
         } else {
+            $log    =   date(" Y-m-d H:i:s ") . " SIKERTELEN BEjelentkezés a(z) {$email} címről ({$_SERVER['REMOTE_ADDR']}) \n";
+            file_put_contents("log.txt", $log, FILE_APPEND);
             $kimenet    .=   "<p><em>Helytelen bejelentkezési adatok!</em></p>";
         }
     }
