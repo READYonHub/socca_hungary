@@ -1,4 +1,10 @@
 <?php
+/* Lapvédelem */
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: ../login.php");
+} ?>
+<?php
 include("../templates/players_header.php");
 ?>
 <div class="create-form w-100 mx-auto p-4" style="max-width:700px;">

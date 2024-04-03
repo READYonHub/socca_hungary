@@ -1,4 +1,10 @@
 <?php
+/* Lapvédelem */
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: ./login.php");
+} ?>
+<?php
 include("templates/header.php");
 ?>
 
@@ -47,7 +53,7 @@ include("templates/header.php");
         </div>
         <div class="col-3 p-4 mt-4">
             <button type="button" class="btn btn-dark">
-                <a href="./players/players_health.php" class="text-light text-decoration-none">Játékos QR-kód létrehozása</a>
+                <a href="./players/players_qr_kod.php" class="text-light text-decoration-none">Játékos QR-kód létrehozása</a>
             </button>
         </div>
     </div>

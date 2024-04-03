@@ -1,8 +1,13 @@
 <?php
-include("../templates/players_header.php");
-?>
+/* Lapvédelem */
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: ../login.php");
+} ?><?php
+    include("../templates/players_header.php");
+    ?>
 <div class="posts-list w-100 p-5">
-   
+
     <table class="table table-bordered">
         <thead>
             <tr>

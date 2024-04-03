@@ -1,6 +1,11 @@
 <?php
-include("templates/header.php");
-?>
+/* Lapvédelem */
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: ../login.php");
+} ?><?php
+    include("templates/header.php");
+    ?>
 
 
 <div class="container p-4 mt-4">

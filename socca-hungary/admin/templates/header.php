@@ -1,6 +1,9 @@
 <?php
-include("siteDefend.php");
-?>
+/* Lapvédelem */
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: ./login.php");
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +20,10 @@ include("siteDefend.php");
         <div class="sidebar bg-dark vh-100">
             <h1 class="bg-primary p-4"><a href="./admin_panel.php" class="text-light text-decoration-none">Vezérlőpult</a></h1>
             <div class="menues p-4">
-
+                <!--ADMINISTRATION-->
+                <div class="menu mt-5" id="firstMenu">
+                    <a href="./admin_panel.php" class="text-light text-decoration-none"><strong>Adminisztrátor</strong></a>
+                </div>
                 <!--NEWS-->
                 <div class="menu mt-5" id="firstMenu">
                     <a href="./news_panel.php" class="text-light text-decoration-none"><strong>Hírek</strong></a>

@@ -36,7 +36,7 @@ if (isset($_POST['login'])) {
     }
     //beléptetés 
     else {
-        $sql    =   "SELECT id
+        $sql    =   "SELECT id_adm
                      FROM admin_default
                      WHERE email = '{$email}'
                      AND passwrd = '" . sha1($passwrd) . "'

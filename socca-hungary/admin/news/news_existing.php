@@ -1,6 +1,11 @@
 <?php
-include("../templates/news_header.php");
-?>
+/* Lapvédelem */
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: ../login.php");
+} ?><?php
+    include("../templates/news_header.php");
+    ?>
 <div class="posts-list w-100 p-5">
     <?php
     if (isset($_SESSION["create"])) {

@@ -1,6 +1,11 @@
 <?php
-include("../templates/news_header.php");
-?>
+/* Lapvédelem */
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: ../login.php");
+} ?><?php
+    include("../templates/news_header.php");
+    ?>
 
 <?php
 $id = $_GET['id'];

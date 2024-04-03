@@ -1,6 +1,9 @@
 <?php
-include("siteDefend.php");
-?>
+/* Lapvédelem */
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: ../login.php");
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +16,7 @@ include("siteDefend.php");
 </head>
 
 <body>
-   
+
     <div class="dashboard d-flex justify-content-between">
         <div class="sidebar bg-dark vh-100">
             <h1 class="bg-primary p-4"><a href="../admin_panel.php" class="text-light text-decoration-none">Vezérlőpult</a></h1>
