@@ -16,7 +16,7 @@ logput gomb sidebar alsó részén fixálása
 
 
 # TESZTEK:
-* linkek ellenőrzése
+* ✅ linkek ellenőrzése
 * lapvédelem ellenőrzése
 
 

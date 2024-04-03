@@ -1,9 +1,3 @@
-<?php
-/* Lapvédelem */
-session_start();
-if (!isset($_SESSION['login'])) {
-    header("Location: ../login.php");
-} ?>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         var current_page = window.location.pathname.split("/").pop();
