@@ -9,7 +9,7 @@ if (!isset($_SESSION['login'])) {
         include("../../connect.php");
 
         $email = mysqli_real_escape_string($conn, $_POST["email"]);
-        $passwrd = mysqli_real_escape_string($conn, $_POST["passwrd"]);
+        $passwrd = sha1(mysqli_real_escape_string($conn, $_POST["passwrd"]));
         $date = mysqli_real_escape_string($conn, $_POST["date"]);
 
         $sqlInsert = "INSERT INTO admin_default(date, email, passwrd ) VALUES ('$date','$email', '$passwrd' )";

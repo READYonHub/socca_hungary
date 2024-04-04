@@ -12,27 +12,32 @@
 <body>
     <div class="dashboard d-flex justify-content-between">
         <div class="sidebar bg-dark vh-100">
-            <h1 class="bg-primary p-4"><a href="./admin_panel.php" class="text-light text-decoration-none">Vezérlőpult</a></h1>
+            <h1 class="bg-primary p-4"><a href="./dashboard_panel.php" class="text-light text-decoration-none">Vezérlőpult</a></h1>
             <div class="menues p-4">
                 <!--ADMINISTRATION-->
-                <div class="menu mt-5" id="firstMenu">
+                <div class="menu mt-4">
                     <a href="./admin_panel.php" class="text-light text-decoration-none"><strong>Adminisztrátor</strong></a>
                 </div>
                 <!--NEWS-->
-                <div class="menu mt-5" id="firstMenu">
+                <div class="menu mt-4">
                     <a href="./news_panel.php" class="text-light text-decoration-none"><strong>Hírek</strong></a>
                 </div>
                 <!--
-                <div class="menu mt-5">
+                <div class="menu mt-4">
                     <a href="../public_news.php" class="text-light text-decoration-none"><strong>Hírek megtekintése</strong></a>
                 </div>
                 -->
                 <!--PLYAER-->
-                <div class="menu mt-5" id="secondMenu">
+                <div class="menu mt-4">
                     <a href="./players_panel.php" class="text-light text-decoration-none"><strong>Játékosok</strong></a>
                 </div>
 
-                <div class="menu mt-5">
+                <!--BACK BUTTON-->
+                <div class="back_button mt-4">
+                    <a href="#" onclick="history.back()" class="text-light text-decoration-none"><strong>Vissza</strong></a>
+                </div>                
+
+                <div class="menu mt-4">
                     <a href="logout.php" class="btn btn-info">Logout</a>
                 </div>
 

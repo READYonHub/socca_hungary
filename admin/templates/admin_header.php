@@ -13,7 +13,7 @@
     <div class="dashboard d-flex justify-content-between">
         <div class="sidebar bg-dark vh-100">
             <h1 class="bg-primary p-4"><a href="#" class="text-light text-decoration-none">Adminisztrátorok</a></h1>
-            <div class="menues p-4">
+            <div class="menu p-4">
                 <div class="menu mt-5" id="zero-menu">
                     <a href="../admin_panel.php" class="text-light text-decoration-none"><strong>Irányítópult</strong></a>
                 </div>

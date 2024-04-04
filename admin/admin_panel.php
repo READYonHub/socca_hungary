@@ -12,12 +12,6 @@ include("templates/header.php");
             <a href="./admin_def/admin_manager.php" class="text-light text-decoration-none">Meglévő Adminisztrátorok módosítása</a>
         </button>
     </div>
-    <div class="col-3 p-4">
-        <button type="button" class="btn "></button>
-    </div>
-    <div class="col-3 p-4">
-        <button type="button" class="btn"></button>
-    </div>
 </div>
 <?php
 include("templates/footer.php");

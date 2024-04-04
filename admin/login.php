@@ -43,7 +43,7 @@ if (isset($_POST['login'])) {
                      LIMIT 1";
         $result =   mysqli_query($conn, $sql);
 
-        if (mysqli_num_rows($result) == 1) {
+        if (mysqli_num_rows($result) > 0) {
             $_SESSION['login']  =   true;
             $log    =   date(" Y-m-d H:i:s ") . " SIKERES BEjelentkezés a(z) {$email} címről ({$_SERVER['REMOTE_ADDR']}) \n";
             file_put_contents("log.txt", $log, FILE_APPEND);
