@@ -26,4 +26,12 @@ logput gomb sidebar alsó részén fixálása
 * naplózás (email, ip)
 * admin letrehozas, modositas, torles, megtekintes
 * qr kod genralas vlm logika szerint - PHP-ban
-* 
+
+
+### 
+        $qr_id = "https://soccahungary.hu?player_id=" . sha1((string) $sor['player_id'] . '' . str_replace(' ', '', $sor['name']) . '' . $sor['registration_number']);
+
+        SELECT + SHA1
+        FOREACH
+        img src ="httő."
+        vw
